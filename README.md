@@ -22,6 +22,29 @@ The image above shows colored blocks numbered from 1 to 6.
 - Block 5: Partial derivatives of the final error wrt weights w1, w2, w3 and w4.
 - Block 6: Expansion of block-5 formulae by using block-4.
 
-### Gradient Descent Weight Update Rule for all weights:
+#### Gradient descent weight update rule for all weight `i`:
 
 w_i(new) = w_i(old) - LearningRate * ∂E_Total/∂w_i
+
+## Loss plots for different learning rates
+Following images show that the network learns very quick (i.e. loss decreases fast) as the learning rate increases.
+
+#### Learning rate = 0.1 
+![loss1_image](images/loss_with_rate_0.1.png "loss1 screenshot")
+
+
+#### Learning rate = 0.2
+![loss1_image](images/loss_with_rate_0.2.png "loss1 screenshot")
+
+#### Learning rate = 0.5
+![loss1_image](images/loss_with_rate_0.5.png "loss1 screenshot")
+
+#### Learning rate = 0.8
+![loss1_image](images/loss_with_rate_0.8.png "loss1 screenshot")
+
+#### Learning rate = 1.0
+![loss1_image](images/loss_with_rate_1.0.png "loss1 screenshot")
+
+#### Learning rate = 2.0
+![loss1_image](images/loss_with_rate_2.0.png "loss1 screenshot")
+
