@@ -21,3 +21,7 @@ The image above shows colored blocks numbered from 1 to 6.
 - Block 4: Intermediate partial derivatives of the error wrt parameters a_h1 and a_h2 to be used in block-5.
 - Block 5: Partial derivatives of the final error wrt weights w1, w2, w3 and w4.
 - Block 6: Expansion of block-5 formulae by using block-4.
+
+### Gradient Descent Weight Update Rule for all weights:
+
+w_i(new) = w_i(old) - LearningRate * ∂E_Total/∂w_i
