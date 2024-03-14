@@ -1,4 +1,4 @@
-# backpropagation_excelsheet_wk6_era
+# Part 1: backpropagation_excelsheet_wk6_era
 Backpropagation calculations on excel sheet. 
 
 The excel file has a simple neural network along with various mathematical formulas related to backpropagation and weight updates.
@@ -47,4 +47,31 @@ Following images show that the network learns very quick (i.e. loss decreases fa
 
 #### Learning rate = 2.0
 ![loss1_image](images/loss_with_rate_2.0.png "loss1 screenshot")
+
+
+# Part 2: Neural Network for Image Classification
+
+## Overview (S6/assignment_week6.ipynb)
+
+This project contains a PyTorch script for training and evaluating neural network models. Here the parameters within the script have been finalized to satisfy the requirement of having minimum accuracy of 99.4% in validation. Following list of parameters underwent variations:
+- Total number of blocks/layers (`conv1`, `conv2`, `conv3`, `gap`, `conv4`)
+- Number of parameters (`size1`, `size2`, `size3`) within each layer
+- Number of maxpooling layers and location
+- Dropout value `drop_value`
+- Average pooling and convolution with 1x1 kernel
+- Scaling of learning rate with `lr_scheduler`
+- Pytorch manual seed value
+- Training dataset: resize, random rotation and crop
+
+## Features
+
+- Neural network model definitions using PyTorch.
+- Data loading and preprocessing with torchvision.
+- Configurable network parameters and training settings.
+
+## Requirements
+
+- PyTorch
+- torchvision
+
 
